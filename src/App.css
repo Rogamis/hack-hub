@@ -27,6 +27,7 @@ html {
   scroll-padding-top: 75px;
 }
 
+
 body {
   font-weight: 400;
   overflow-x: hidden;
@@ -36,15 +37,21 @@ body {
   font-family: 'Centra', sans-serif !important;
 }
 
+.study_page {
+  padding: 15px;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   margin: 0;
   padding: 0;
   line-height: normal;
+    margin-top: 100px;
+  margin-bottom: 15px;
 }
 
 p, a, li, button, ul {
-  margin: 0;
+  margin-top: 25px;
   padding: 0;
   line-height: normal;
   text-decoration: none;
@@ -53,6 +60,7 @@ p, a, li, button, ul {
   font-size: 20px;
   line-height: 150%;
   letter-spacing: -0.05em;
+  color: white;
 }
 
 @media (min-width:1700px) {
@@ -69,6 +77,12 @@ a:hover {
 img {
   width: 100%;
   height: auto;
+}
+
+.demonstrate_image {
+  width: 100%;
+  height: auto;
+  align-self: center;
 }
 
 button {
@@ -551,6 +565,42 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form button:hover::before {
   width: 100%;
 }
+
+.next_page_study {
+  font-weight: 700;
+  color: #000;
+  background-color: #fff;
+  padding: 14px 48px;
+  font-size: 18px;
+  margin-top: 25px;
+  border-radius: 0;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+.next_page_study span {
+  z-index: 1;
+  position: relative;
+}
+
+.next_page_study:hover {
+  color: #fff;
+}
+.next_page_study::before {
+  content: "";
+  background: #121212;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+}
+.next_page_study:hover::before {
+  width: 100%;
+}
+
 
 video {
   align-items: center;

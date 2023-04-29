@@ -15,11 +15,16 @@ import { useNavigate } from "react-router";
 
 export const Projects = () => {
 
+  const navigate = useNavigate();
+    function handleClick() {
+     navigate("/startIT");
+   }
+
   const projects = [
     {
-      title: "Початок в ІТ",
-      description: "Поговоримо про ІТ?",
+      title: <button onClick={handleClick}>Початок в ІТ</button>,
       imgUrl: projImg1,
+      description: <button onClick={handleClick}>Тут написані бизові моменти в ІТ та як воно функціонує. Перед початком вивчення самого ІТ, варто прочитати</button>,
     },
     {
       title: "HTML",
@@ -63,11 +68,6 @@ export const Projects = () => {
     },
   ];
 
-   const navigate = useNavigate();
-   function handleClick() {
-     navigate("/startIT");
-   }
-
   return (
     <section className="project" id="project">
       <Container>
@@ -76,7 +76,7 @@ export const Projects = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projects</h2>
+                <h2>Проекти</h2>
                 <p>Тут наведені деякі проекти які ми з вами будемо робити для подальшого вашого портфоліо та резюме</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
