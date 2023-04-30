@@ -27,6 +27,11 @@ html {
   scroll-padding-top: 75px;
 }
 
+a {
+  text-decoration: underline;
+}
+
+
 
 body {
   font-weight: 400;
@@ -78,6 +83,14 @@ a:hover {
 img {
   width: 100%;
   height: auto;
+
+}
+
+.img_in_text {
+  width: 35px;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 .demonstrate_image {

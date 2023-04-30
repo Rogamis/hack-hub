@@ -15,21 +15,27 @@ import { useNavigate } from "react-router";
 
 export const Projects = () => {
 
-  const navigate = useNavigate();
-    function handleClick() {
-     navigate("/startIT");
-   }
+  const navigateToStartIt = useNavigate();
+    function toStartIt() {
+      navigateToStartIt("/startIT");
+    }
+
+    const navigateToStartHTML = useNavigate();
+    function toStartHTML() {
+      navigateToStartHTML("/starthtml");
+    }
 
   const projects = [
     {
-      title: <button onClick={handleClick}>Початок в ІТ</button>,
+      title: <button onClick={toStartIt}>Початок в ІТ</button>,
       imgUrl: projImg1,
-      description: <button onClick={handleClick}>Тут написані бизові моменти в ІТ та як воно функціонує. Перед початком вивчення самого ІТ, варто прочитати</button>,
+      description: <button onClick={toStartIt}>Тут написані бизові моменти в ІТ та як воно функціонує. Перед початком вивчення самого ІТ, варто прочитати</button>,
     },
     {
-      title: "HTML",
+      title: <button onClick={toStartHTML}>HTML</button>,
       description: "Починаємо верстати наш HTML проект",
       imgUrl: projImg2,
+      description: <button onClick={toStartHTML}>Познайомимось з HTML</button>,
     },
     {
       title: "HTML як він є",
@@ -58,12 +64,12 @@ export const Projects = () => {
     },
     {
       title: "JavaScript",
-      description: "Design & Development",
+      description: "Частина 2",
       imgUrl: projImg7,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "JavaScript",
+      description: "Чистина 3",
       imgUrl: projImg7,
     },
   ];
