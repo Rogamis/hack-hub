@@ -52,6 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p, a, li, button, ul {
   margin-top: 25px;
+  margin-bottom: 25px;
   padding: 0;
   line-height: normal;
   text-decoration: none;
@@ -392,7 +393,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 72%;
   margin: 0 auto;
   border-radius: 50px;
-  background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
 }
 .project .nav.nav-pills .nav-item {
@@ -414,7 +414,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .project .nav.nav-pills .nav-link::before {
     content: "";
-    position: absolute;
     width: 0;
     height: 100%;
     background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
@@ -425,9 +424,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .project .nav.nav-pills .nav-link.active::before {
     width: 100% !important;
+    
 }
 .project .nav.nav-pills .nav-link.active {
     border: 1px solid rgba(255, 255, 255, 1);
+    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
 }
 .nav-link#projects-tabs-tab-first {
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -573,6 +574,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 14px 48px;
   font-size: 18px;
   margin-top: 25px;
+  margin-bottom: 25px;
   border-radius: 0;
   position: relative;
   transition: 0.3s ease-in-out;
