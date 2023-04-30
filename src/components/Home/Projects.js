@@ -94,7 +94,7 @@ export const Projects = () => {
                     </Nav.Item>
                     
                     <Nav.Item>
-                      <Nav.Link eventKey="third">WordPress</Nav.Link>
+                      <Nav.Link eventKey="third">WordPress and SEO</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
