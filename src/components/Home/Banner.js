@@ -53,12 +53,8 @@ export const Banner = () => {
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
+              
+                <div>
                   <h1>
                     {`Привіт! Давай навчимось:`}{" "}
                     <span
@@ -77,7 +73,6 @@ export const Banner = () => {
                     </strong>
                   </p>
                 </div>
-              )}
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>

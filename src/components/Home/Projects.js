@@ -25,6 +25,11 @@ export const Projects = () => {
       navigateToStartHTML("/starthtml");
     }
 
+    const navigateToEndtHTML = useNavigate();
+    function toEndhtml() {
+      navigateToEndtHTML("/endhtml");
+    }
+
   const projects = [
     {
       title: <button onClick={toStartIt}>Початок в ІТ</button>,
@@ -38,8 +43,8 @@ export const Projects = () => {
       description: <button onClick={toStartHTML}>Познайомимось з HTML</button>,
     },
     {
-      title: "HTML як він є",
-      description: "Закінчуємо HTML та переходимо до іншого блоку",
+      title: <button onClick={toEndhtml}>HTML</button>,
+      description: <button onClick={toEndhtml}>Закінчуємо знайомлення з HTML</button>,
       imgUrl: projImg3,
     },
     {
